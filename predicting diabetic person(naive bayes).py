@@ -61,9 +61,9 @@ if __name__=='__main__':
     for i in range(xtest.shape[0]):
         row=xtest[i].tolist()
         if outcomes[i]==1:
-            row.append("Diabetic")
+            row.append("Not Diabetic")
         else :
-            row.append('Not Diabetic')
+            row.append('Diabetic')
         final_answer.append(tuple(row))
         # print table 
         #tabulate takes list of tuples for rows and a list of headers 
