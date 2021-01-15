@@ -78,16 +78,16 @@ class DecisionTree:
         #stop at a leaf node
         if data_left.shape[0]==0 or data_right.shape[0]==0:
             if X_train.Outcome.mean()>=0.5 :
-                self.target="Diabetic"
-            else :
                 self.target="Not Diabetic"
+            else :
+                self.target="Diabetic"
             return 
         #stop early if max depth reached
         if self.depth>=self.max_depth :
             if X_train.Outcome.mean()>=0.5 :
-                self.target="Diabetic"
-            else :
                 self.target="Not Diabetic"
+            else :
+                self.target="Diabetic"
             return 
         #building tree recursively
         self.left=DecisionTree(depth=self.depth+1, max_depth=self.max_depth)
@@ -96,9 +96,9 @@ class DecisionTree:
         self.right.train(data_right)
         #set target at every node( to make predictions at mid nodes)
         if X_train.Outcome.mean()>=0.5 :
-                self.target="Diabetic"
+                self.target="Not Diabetic"
         else :
-            self.target="Not Diabetic"
+            self.target="Diabetic"
         return    
 
     def predict(self,test):
