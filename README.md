@@ -8,3 +8,6 @@ This project has been made again using Multinomial Naive Bayes Classifier.
 
 Another Update:
 This Project has been made again using Decision trees.
+
+Another Update:
+This project has been made again using Logistic Regression
