@@ -125,6 +125,6 @@ for ix in range(test_data.shape[0]):
     y_pred.append(dt.predict(test_data.loc[ix]))
 #store the predictions in a file
 with open('submit.csv','w') as f:
-    f.write('Id,survived\n')
+    f.write('Id,Outcome\n')
     for i in range(len(y_pred)):
         f.write("{},{}\n".format(i,y_pred[i]))
