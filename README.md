@@ -4,6 +4,7 @@ Diabetes Data set consisting of following features :'Pregnancies', 'Glucose', 'B
 Training data and testing data has been provided as csv files
 
 Another Update :
-This project has been made again using Multinomial Naive Bayes Classifier
+This project has been made again using Multinomial Naive Bayes Classifier.
+
 Another Update:
 This Project has been made again using Decision trees.
