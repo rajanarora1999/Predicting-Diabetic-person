@@ -11,3 +11,6 @@ This Project has been made again using Decision trees.
 
 Another Update:
 This project has been made again using Logistic Regression
+
+Another Update:
+This project has been made again using Support Vector Machine
