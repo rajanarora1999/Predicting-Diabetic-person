@@ -63,9 +63,9 @@ def predict(x,w,b):
     
     confidence = hypothesis(x,w,b)
     if confidence<0.5:
-        return "Diabetic"
-    else:
         return "Not Diabetic"
+    else:
+        return "Diabetic"
 
 y_pred=[]
 for i in range(X_test.shape[0]):
